@@ -8,6 +8,9 @@ the function will:
     set up the graph by plotting the points using the array and labeling
     show case the graph
 """
+import matplotlib.pyplot as plt
+import numpy as np
+
 def graphSnowfall(t):
     bars = [0,0,0,0,0]  # data structure to hold the values (for this test case, the numbers are from 0 to 50)
     f = open(t, "r") #open file
@@ -22,6 +25,3 @@ def graphSnowfall(t):
     y = np.array(bars) # the y value 
     plt.bar(x,y) #plotting the bars
     plt.show() #showing the bar grapgh
-
-
-graphSnowfall("test.txt")
